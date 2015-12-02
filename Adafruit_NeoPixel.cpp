@@ -1218,7 +1218,7 @@ neoPixelColor Adafruit_NeoPixel::Color(uint8_t r, uint8_t g, uint8_t b, uint8_t 
 // hue must be a float value between 0 and 360
 // saturation must be a float value between 0 and 1
 // brightness must be a float value between 0 and 1
-uint32_t Adafruit_NeoPixel::HSVColor(float h, float s, float v) {
+neoPixelColor Adafruit_NeoPixel::HSVColor(float h, float s, float v) {
   h = constrain(h, 0, 360);
   s = constrain(s, 0, 1);
   v = constrain(v, 0, 1);
